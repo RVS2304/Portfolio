@@ -1,16 +1,3 @@
-/*  
-#F9F9F9
-#DCDEDD
-#74483F
-#4B4643
-#fbdc6a - yellow
-#101921 - Dark navy/black
-#3e3131 - Dark brown
-#6a3a3c - Deep red
-#b8a793 - Beige/taupe
-#c6a689 - Light gold/copper
-*/
-
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
@@ -93,6 +80,7 @@ main {
 
 #welcome-message {
     position: relative;
+    /* color: #ff8f00; */
     color: #fff;
     font-weight: bold;
     top: 10rem;
