@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#about-section">About</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#interests-section">Interests</a>
+        <a href="#footer-section">Connect</a>
+    </nav>
+    <main>
+        <section id="welcome-section">
+            <span id="greeting">
+                <h1 id="name">
+                   I'm <br> VishnuSumanjani Ranga
+                </h1>
+            </span>
+
+            <p id="welcome-message" class="reveal"><i>
+                    Welcome to the source code of my journey. Here, each project functions like a well-tuned algorithm
+                    powered by
+                    creativity.
+                    Are you ready to allocate some time to explore?
+                </i>
+            </p>
+        </section>
+
+        <section id="about-section" class="reveal">
+            <h2>Who Am I?</h2>
+            <p>👋 Hello! You've just landed at the intersection of <b><i>Full-Stack Development</i></b> and <b><i>Data
+                        Analytics!</i></b>
+                I’m a passionate Full Stack Developer and aspiring Data Analyst, dedicated to turning complex
+                problems
+                into
+                simple,
+                elegant solutions. My journey into tech began during my BTech studies at JNTU Narasaraopet, where I
+                discovered
+                the power of coding to create impactful applications. I thrive in building end-to-end applications and
+                am fascinated by the stories that data can tell.
+                Together, let’s combine code and analytics to create smarter, more intuitive digital experiences!
+            </p>
+        </section>
+
+    </main>
+
+    <section id="projects-section" class="reveal">
+        <a href="https://github.com/RVS2304/company-layoffs-analysis" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="company-layoffs.jpg" loading="lazy" alt="Company Layoffs Analysis">
+                <div class="card-content">
+                    <h2 class="card-title">Company Layoffs Analysis</h2>
+                    <p class="card-description">SQL-based project focusing on data cleaning and exploratory data analysis (EDA) of company layoffs.</p>
+                    <p class="card-tech">Technologies: SQL</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/RVS2304/Feedback-System" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="feedback-system.png" loading="lazy" alt="Anonymous Student Feedback System">
+                <div class="card-content">
+                    <h2 class="project-title">Anonymous Student Feedback System</h2>
+                    <p class="card-description">A platform for students to provide anonymous feedback to improve educational experiences.</p>
+                    <p class="card-tech">Technologies: MERN Stack</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/RVS2304/Real-Estate-Management-System" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="real-estate.png" loading="lazy" alt="Real Estate Management System">
+                <div class="card-content">
+                    <h2 class="card-title">Real Estate Management System</h2>
+                    <p class="card-description">A web application to manage real estate listings and streamline property transactions.</p>
+                    <p class="card-tech">Technologies: Java, Spring Boot, React</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/RVS2304/To-Do-List" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="to-do.png" loading="lazy" alt="Real Estate Management System">
+                <div class="card-content">
+                    <h2 class="card-title">To-Do Application</h2>
+                    <p class="card-description">A full-stack To-Do List application built using the MEAN stack</p>
+                    <p class="card-tech">Technologies: Java, Spring Boot, HTML, CSS</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/RVS2304/Pomodoro" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="pomodoro.png" loading="lazy" alt="Pomodoro">
+                <div class="card-content">
+                    <h2 class="card-title">Pomodoro</h2>
+                    <p class="card-description">A simple and effective Pomodoro Timer built using HTML, CSS, and JavaScript. </p>
+                    <p class="card-tech">Technologies: HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/RVS2304/FreeCodeCamp-Projects" target="_blank" class="project-link">
+            <div class="project-tile">
+                <img src="responsive-web-design.jpeg" loading="lazy" alt="Web Design Projects">
+                <div class="card-content">
+                    <h2 class="card-title">Web Design Projects</h2>
+                    <p class="card-description">Projects and Exercises completed as part of FreeCodeCamp's curriculum</p>
+                    <p class="card-tech">Technologies: HTML, CSS</p>
+                </div>
+            </div>
+        </a>
+
+    </section>
+
+    <section id="interests-section" class="reveal">
+        <h2>Tech Interests</h2>
+        <div class="carousel">
+            <button class="arrow left-arrow" onclick="prevImage()">&#10094;</button>
+            <div class="interest-card">
+                <img id="tech-image" loading="lazy" src="front-end.png" alt="Front-End">
+                <div class="description-text" id="description"></div>
+            </div>
+            <button class="arrow right-arrow" onclick="nextImage()">&#10095;</button>
+        </div>
+        <div class="image-indicators">
+            <span class="indicator" onclick="setImage(0)"></span>
+            <span class="indicator" onclick="setImage(1)"></span>
+            <span class="indicator" onclick="setImage(2)"></span>
+            <span class="indicator" onclick="setImage(3)"></span>
+            <span class="indicator" onclick="setImage(4)"></span>
+        </div>
+    </section>
+
+
+
+    <footer id="footer-section" class="reveal">
+        <div>
+            <p id="quote"><i>✨ “Great things in business are never done by one person; they're done by a team of
+                    people.”</i></p>
+            <p id="quote-by"><b>- Steve Jobs</b></p>
+        </div>
+        <div class="connect-section">
+            <p style="font-size: 20px;">Connect with Me Here...</p>
+            <div class="profiles">
+                <a href="mailto:vishnusumanjani.rangas5@gmail.com?subject=Let's%20Connect&body=Hello%20Vishnu,"
+                    class="profile-link" target="_blank"><img src="mail.png" loading="lazy" alt="Mail" class="profile-icon" /></a>
+                <a href="https://www.linkedin.com/in/vishnusumanjani-ranga/" class="profile-link" target="_blank">
+                    <img src="linkedin.png" loading="lazy" alt="LinkedIn" class="profile-icon" /></a>
+                <a href="https://www.github.com/RVS2304/" class="profile-link" target="_blank">
+                    <img src="github.png" loading="lazy" alt="Github" class="profile-icon" /></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+
+        function revealOnScroll() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            reveals.forEach(function (reveal) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveal.getBoundingClientRect().top;
+                var elementVisible = 100;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                } else {
+                    reveal.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+
+
+        let currentIndex = 0;
+        const images = [
+            "front-end.png",
+            "back-end.png",
+            "full-stack.png",
+            "data-analytics.png",
+            "machine-learning.png"
+        ];
+
+        const alt = [
+            "Front-end",
+            "Back-end",
+            "Full-Stack",
+            "Data-Analytics",
+            "Machine-Learning"
+        ]
+
+        const descriptions = [
+           "Front-end Development",
+            "Back-end Development",
+            "Full-Stack Development",
+            "Data-Analytics",
+            "Machine-Learning"
+        ]
+
+        function updateImage() {
+            const imgElement = document.getElementById('tech-image');
+            const descriptionElement = document.getElementById('description');
+
+            imgElement.src = images[currentIndex];
+            imgElement.alt = alt[currentIndex];
+            descriptionElement.textContent = descriptions[currentIndex];
+
+            document.querySelectorAll('.indicator').forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage();
+        }
+
+        function setImage(index) {
+            currentIndex = index;
+            updateImage();
+        }
+
+        updateImage();
+
+    </script>
+
+</body>
+
+</html>

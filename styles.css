@@ -1,0 +1,378 @@
+/*  
+#F9F9F9
+#DCDEDD
+#74483F
+#4B4643
+#fbdc6a - yellow
+#101921 - Dark navy/black
+#3e3131 - Dark brown
+#6a3a3c - Deep red
+#b8a793 - Beige/taupe
+#c6a689 - Light gold/copper
+*/
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Radley';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(#101921 0%, #2b3238 50%, #101921 100%);
+}
+
+#navbar {
+    color: #C6A689;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar a {
+    color: #e8e7e7;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+    font-size: 23px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#welcome-section {
+    position: relative;
+    top: 3rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bogart';
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#greeting {
+    font-size: 48px;
+    color: #000;
+    text-shadow: 2px 2px 2px rgb(255, 146, 146);
+    animation: fadeIn 1s ease forwards;
+    letter-spacing: 2px;
+}
+
+
+#welcome-message {
+    position: relative;
+    color: #ff8f00;
+    font-weight: bold;
+    top: 10rem;
+    width: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+#about-section {
+    background-color: #C6A689;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 18rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+#about-section h2 {
+    font-size: 30px;
+    color: #3b0000;
+}
+
+#about-section p {
+    padding: 1rem 3rem;
+    font-size: 20px;
+}
+
+#projects-section {
+    position: relative;
+    top: 5rem;
+    padding: 50px 20px;
+    width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem 1rem;
+}
+
+#projects-section a {
+    text-decoration: none;
+}
+
+.project-tile {
+    position: relative;
+    margin: auto;
+    width: 20rem;
+    height: 20rem;
+    background-color: #dbd3d3;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-tile img {
+    height: 50%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #000;
+}
+
+.card-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.project-tile:hover .card-description {
+    opacity: 1;
+}
+
+#interests-section {
+    position: relative;
+    font-size: 26px;
+    color: #E5E4E2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    top: 10rem;
+    bottom: 5rem;
+    height: fit-content;
+}
+
+#interests-section h2 {
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #C6A689;
+}
+
+.interest-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interest-card img {
+    height: 30rem;
+    width: 50rem;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10%;
+}
+
+.description-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 76, 88, 0.812);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.interest-card:hover .description-text{
+    opacity: 1;
+}
+
+.image-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #C6A689;
+}
+
+
+#footer-section {
+    position: relative;
+    height: fit-content;
+    top: 18rem;
+    background-color: #6a3a3c;
+    color: #E5E4E2;
+    font-size: 26px;
+    padding: 3rem 0;
+}
+
+#footer-section p {
+    width: 80%;
+    margin: auto;
+}
+
+#footer-section #quote {
+    text-align: center;
+}
+
+#footer-section #quote-by {
+    text-align: end;
+}
+
+.connect-section {
+    position: relative;
+    top: 2rem;
+    padding: 2rem;
+}
+
+.profiles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile-icon {
+    width: 35px;
+    border-radius: 10%;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    #navbar {
+        padding: 10px 10px;
+    }
+
+    #welcome-section {
+        padding: 20px;
+    }
+
+    .project-tile {
+        padding: 15px;
+    }
+
+    #about-section {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1050px) {
+    #navbar {
+        padding: 10px 20px;
+    }
+
+    .project-tile {
+        padding: 20px;
+    }
+
+    #about-section {
+        height: fit-content;
+    }
+
+}
