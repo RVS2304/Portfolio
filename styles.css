@@ -1,6 +1,15 @@
+
+
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -31,7 +40,6 @@ body {
     z-index: 1;
     display: flex;
     justify-content: flex-end;
-    /* background-color: #3b0000; */
 }
 
 #navbar a {
@@ -266,7 +274,7 @@ main {
     border-radius: 10%;
 }
 
-.interest-card:hover .description-text{
+.interest-card:hover .description-text {
     opacity: 1;
 }
 
@@ -334,6 +342,61 @@ main {
 
 
 /* Media Queries */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+    #navbar {
+        padding: 10px 5px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #navbar a {
+        font-size: 14px;
+    }
+
+    #navbar a:hover {
+        font-size: 16px;
+    }
+
+    #welcome-section {
+        height: 60vh;
+        top: 6rem;
+    }
+
+    #name {
+        font-size: 1.2rem;
+    }
+
+    #welcome-message {
+        font-size: 12px;
+        width: 16rem;
+        top: 6rem;
+    }
+
+    .project-tile {
+        padding: 15px;
+        width: 15rem;
+        height: fit-content;
+    }
+
+    #about-section {
+        height: fit-content;
+    }
+
+    #projects-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    #interests-section img {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+
 @media only screen and (min-width: 481px) and (max-width: 720px) {
     #navbar {
         padding: 10px 10px;
