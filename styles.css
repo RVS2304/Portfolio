@@ -1,5 +1,4 @@
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -346,7 +345,6 @@ main {
     #navbar {
         padding: 10px 5px;
         justify-content: space-around;
-        flex-direction: column;
     }
 
     #navbar a {
@@ -359,7 +357,6 @@ main {
 
     #welcome-section {
         height: 60vh;
-        top: 6rem;
     }
 
     #name {
@@ -393,6 +390,10 @@ main {
     #interests-section img {
         width: 12rem;
         height: 12rem;
+    }
+
+    #footer-section #quote-by {
+        text-align: center;
     }
 }
 
